@@ -99,7 +99,7 @@ class JSONSerializer(object):
             return json.dumps(data)
     
     def id_out_of_range_msg(self):
-        return "json/{id} must be in range of -1 <= id <= %s" % (len(self.data) - 1)
+        return "json/(id) must be in range of -1 <= id <= {}".format(len(self.data) - 1)
 
 
 def get_data():
@@ -112,4 +112,5 @@ app.add_route('/', Site(data))
 app.add_route('/json/{id}', JSONSerializer(data))
 server = simple_server.make_server(HOST, PORT, app)
 if __name__ == '__main__':
+    print('Server running at HOST={HOST} PORT={PORT}'.format(**locals()))
     server.serve_forever()
