@@ -39,7 +39,7 @@ def slice_string_data(data, size=6):
 def string_to_humidity_temp_height(data):
     temp = int(data[:2], 16)
     humidity = int(data[2:4], 16)
-    height = int(data[4:], 16) * 100
+    height = int(data[4:], 16) * 10
     return (temp, humidity, height)
 
 
