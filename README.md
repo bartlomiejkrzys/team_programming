@@ -1,5 +1,14 @@
 # (TeamProgramming) MakeChart
 
+## Requirements:
+* Python 3.X
+* matplotlib :
+  ```
+  console >> python -m pip install matplotlib
+  ```
+	
+
+
 ## Usage:
 * Enter project directory.
 * Type :
