@@ -17,6 +17,6 @@
   ```
 
 #### Example with available file :
- * ```
+   ```
  	console >> python make_chart.py EEPROM
    ```

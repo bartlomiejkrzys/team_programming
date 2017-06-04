@@ -52,7 +52,7 @@ def data_list_to_string(data):
 def process_text(data):
     '''
     Args:
-        :data: :str: Clear string of data without gibberish chars
+        :data: :str: Clean string of data without gibberish chars
     Our:
         :list: List of tuples (temp, humidity, height)
     '''
