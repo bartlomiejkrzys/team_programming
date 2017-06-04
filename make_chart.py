@@ -124,6 +124,13 @@ def plot_data(temp, humidity, height):
     plt.show()
     
 def plot_from_file(filename):
+    '''
+    Args:
+        :filename: :str: File name
+    Out:
+        :None: Main function. Take filename, process its data 
+               and plot it on a nice-formatted chart.
+    '''
     txt = get_data_from_file(filename)
     data = process_text(txt)
     temp, humidity, height = list(zip(*data))
